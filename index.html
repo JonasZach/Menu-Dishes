@@ -1,69 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Roasted Butternut Squash Risotto</title>
+  <title>Παραδοσιακή Ελληνική Μοσχαρίσια Γάλακτος</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #fffaf4;
-      color: #333;
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
+      font-family: Arial, sans-serif;
+      background: #fffdfa;
+      color: #222;
+      margin: 2em;
     }
-    h1 {
-      color: #b85c38;
-      text-align: center;
+    .dish-container {
+      max-width: 550px;
+      margin: 0 auto;
+      background: #f7f7f7;
+      border-radius: 12px;
+      padding: 2em;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     }
-    img {
-      width: 100%;
+    .dish-image {
+      display: block;
+      margin: 0 auto 1.2em auto;
+      max-width: 320px;
+      width: 80%;
       border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
     }
-    .section {
-      margin-top: 20px;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    ul li::before {
-      content: "✓ ";
-      color: #4caf50;
-    }
-    .not-checked::before {
-      content: "✗ ";
-      color: #e53935;
-    }
-    .label {
+    .dish-title {
+      font-size: 1.5em;
       font-weight: bold;
-      color: #555;
+      margin-bottom: 0.5em;
+      color: #3B3B3B;
+    }
+    .dish-description {
+      margin-bottom: 1.5em;
+      font-size: 1.1em;
+    }
+    .dietary {
+      margin-top: 1.5em;
+      background: #e2f4e7;
+      padding: 1em;
+      border-radius: 7px;
+    }
+    .dietary h3 {
+      margin-top: 0;
+      font-size: 1.1em;
+      color: #238c4c;
+    }
+    .dietary-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .dietary-list li {
+      padding: 0.2em 0;
+      font-size: 1em;
     }
   </style>
 </head>
 <body>
-  <h1> Roasted Butternut Squash Risotto</h1>
-  
-  <img src="butternut-squash-risotto-2.jpg" alt="Roasted Butternut Squash Risotto" width="100" height="400">
+  <div class="dish-container">
+    <!-- Replace 'dish.jpg' with your actual image filename -->
+    <img src="dish.jpg" alt="Μπριζόλα μοσχαρίσια γάλακτος" class="dish-image">
 
-  <div class="section">
-    <p><span class="label">Description:</span> Creamy Arborio rice slow-cooked with vegetable broth, roasted butternut squash, garlic, and fresh thyme. Finished with vegan butter and toasted pumpkin seeds for a nutty crunch.</p>
-  </div>
+    <div class="dish-title">Παραδοσιακή Ελληνική Μοσχαρίσια Γάλακτος</div>
+    <div class="dish-description">
+      Μπριζόλα μοσχαρίσια γάλακτος (400 γρ.), με baby ρόκα, ελαφριά βινεγκρέτ, κρεμώδη σάλτσα ταρτάρ και ελληνικές πιτούλες.
+    </div>
 
-  <div class="section">
-    <p><span class="label">Dietary Information:</span></p>
-    <ul>
-      <li>Vegan</li>
-      <li>Gluten-Free</li>
-      <li class="not-checked">Contains Nuts</li>
-      <li>Dairy-Free</li>
-      <li>Vegetarian</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <p><span class="label">Ingredients:</span> Arborio rice, butternut squash, garlic, onion, olive oil, vegetable broth, nutritional yeast, vegan butter, thyme, black pepper, sea salt, pumpkin seeds.</p>
+    <div class="dietary">
+      <h3>Διατροφικές Πληροφορίες</h3>
+      <ul class="dietary-list">
+        <li>❌ Κατάλληλο για vegetarians/vegans</li>
+        <li>✅ Περιέχει γλουτένη (πιτούλες)</li>
+        <li>⚠️ Περιέχει αυγά (σάλτσα ταρτάρ)</li>
+        <li>⚠️ Περιέχει γαλακτοκομικά (σάλτσα ταρτάρ)</li>
+        <li>⚠️ Ενδέχεται να περιέχει ίχνη ξηρών καρπών</li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
