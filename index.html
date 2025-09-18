@@ -33,21 +33,23 @@
     }
     .lang-buttons {
       display: flex;
-      gap: 2em;
+      gap: 20px; /* Adds space between buttons */
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
     }
     .lang-btn {
-  font-size: 2.5rem;       /* Larger emoji size for visibility */
-  width: 70px;             /* Ensures consistent button width */
-  height: 70px;            /* Ensures consistent button height */
-  display: flex;           /* Centers emoji inside button */
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0 10px;          /* Adds spacing between buttons */
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+      font-size: 3rem;         /* Bigger emoji for clarity */
+      width: 80px;             /* Fixed width */
+       height: 80px;            /* Fixed height */
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+       display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease;
 }
     .lang-btn:hover {
       background: #e2f4e7;
@@ -73,6 +75,7 @@
 </div>
 </body>
 </html>
+
 
 
 
