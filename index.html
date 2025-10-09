@@ -16,6 +16,8 @@
     }
     
     body {
+      margin: 0;
+      padding: 0;
       background-image: url('green-background_image.png'); 
       background-size: cover;       
       background-position: center;  
@@ -27,6 +29,16 @@
       min-height: 100vh;
       align-items: center;
       justify-content: center;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+      z-index: -1;
     }
     
     .logo {
@@ -51,13 +63,7 @@
   gap: 160px; 
   margin-top: 20px;
 }
-    .logo-container {
-  background-color: rgba(255, 255, 255, 0.7); /* Light overlay */
-  padding: 10px;
-  display: inline-block;
-  border-radius: 8px; /* Optional: soft edges */
-}
-
+    
 .lang-btn {
   width: 20px;
   height: 20px;
@@ -92,6 +98,7 @@
 </div>
 </body>
 </html>
+
 
 
 
