@@ -1,101 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Επιλογή Γλώσσας / Choose Language</title>
-  <meta name="viewport" content="width=device-width, initial-scale=0.9">
-  <meta name="theme-color" content="#111111">
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      background: #111111;
-      color: #fff;
-      font-family: Georgia, serif;
-    }
-    
-    body {
-      margin: 0;
-      padding: 0;
-      background-image: url('green-background_image.png'); 
-      background-size: cover;       
-      background-position: center;  
-      background-repeat: no-repeat; 
-      background-attachment: fixed;
+    <meta charset="UTF-8">
+    <title>Παραδοσιακό Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <meta name="theme-color" content="#111111">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: #111111;
+            color: #fff;
+            font-family: Georgia, serif;
+        }
 
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      align-items: center;
-      justify-content: center;
-    }
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
-      z-index: -1;
-    }
-    
-    .logo {
-      max-width: 280px;
-      margin-bottom: 2rem;
-      display: block;
-    }
-    .flag-icon {
-  width: 112px;       /* Small width */
-  height: 84px;      /* Small height */
-  object-fit: cover; /* Ensures consistent scaling */
-}
-    .choose-lang {
-      font-size: 1.3em;
-      margin-bottom: 2em;
-      letter-spacing: 0.02em;
-    }
-    .lang-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 160px; 
-  margin-top: 20px;
-}
-    
-.lang-btn {
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-    .lang-btn:hover {
-      background: #e2f4e7;
-      color: #238c4c;
-    }
-  </style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('green-background_image.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        .logo {
+            max-width: 280px;
+            display: block;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <img src="PARADOSIAKO_LOGO-bez.png" alt="logo" class="logo">
- <div class="choose-lang">Επιλέξτε γλώσσα / Choose language</div>
-<div class="lang-buttons">
-  <a href="language-gr.html">
-    <button class="lang-btn">
-      <img src="grflag1.png" alt="Greek Flag" class="flag-icon">
-    </button>
-  </a>
-  <a href="language-en.html">
-    <button class="lang-btn">
-      <img src="GBFLAG3.png" alt="British Flag" class="flag-icon">
-    </button>
-  </a>
-</div>
+    <a href="menu_reordered.pdf" target="_blank">
+        <img src="PARADOSIAKO_LOGO-bez.png" alt="logo" class="logo">
+    </a>
 </body>
 </html>
 
